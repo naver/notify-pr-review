@@ -1,0 +1,12 @@
+name: 'Notify PR Review'
+description: 'Notify PR review requests by sending a slack message'
+inputs:
+  token:
+    description: "GitHub token"
+    required: true
+  slackBotToken:
+    description: "slack bot token for messaging"
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
