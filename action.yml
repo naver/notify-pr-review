@@ -1,5 +1,8 @@
 name: 'Notify PR Review'
 description: 'Notify PR review requests by sending a slack message'
+branding:
+  icon: "bell"
+  color: "green"
 inputs:
   token:
     description: "GitHub token"
