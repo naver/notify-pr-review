@@ -19,7 +19,7 @@ name: notify pr review
 
 on:
   pull_request:
-    types: [review_requested]
+    types: [review_requested, ready_for_review]
     
 jobs:
   notify:
