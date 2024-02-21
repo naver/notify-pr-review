@@ -26,7 +26,7 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Notify PR Review
-        uses: naver/notify-pr-review@v1.2.0
+        uses: naver/notify-pr-review@v1.2.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
