@@ -1,20 +1,20 @@
 # notify-pr-review
 
-🌏 한국어 | [**English**](README.en.md)
+🌏 [**한국어**](README.md) | English
 
-PR 리뷰 요청을 받으면 Slack으로 알리는 Github Actions
+GitHub Actions to notify on Slack when a PR review is requested.
 
 <img src="https://user-images.githubusercontent.com/13075245/279234262-cbe5c159-e103-49eb-bf1f-b50116f98984.png" width="500" alt="intro">
 
 ## Usage
 
-1. 메시지 전달을 위해 `SLACK_BOT_TOKEN` 이름의 secret을 세팅하세요.
+1. Set up a secret named `SLACK_BOT_TOKEN` to send the message.
 
-> 세팅할 Repo > Settings > Secrets > New repository secret
+> Go to the Repo > Settings > Secrets > New repository secret
 
-이때, Value는 슬랙에서 제공하는 `xoxb-` 형태의 토큰이어야 합니다.
+For the value, use a Slack token that starts with `xoxb-`.
 
-2. `.github/workflow/notify-pr-review.yml` 파일을 만드세요:
+2. Create a `.github/workflow/notify-pr-review.yml` file:
 
 ```yml
 name: notify pr review
@@ -38,11 +38,11 @@ jobs:
 
 ### `token`
 
-**Required** GitHub에서 제공하는 토큰
+**Required** GitHub token
 
 ### `slackBotToken`
 
-**Required** Slack bot을 통해 메시지를 보내기 위한 토큰
+**Required** Slack bot token to send messages
 
 e.g. `xoxb-798572638592-435243279588-9aCaWNnzVYelK9NzMMqa1yxz`
 
